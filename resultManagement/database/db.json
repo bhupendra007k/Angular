@@ -1,0 +1,18 @@
+
+   [
+    {
+      "id": 1,
+      "roll": "json-server",
+      "name": "typicode",
+      "score": "typicode",
+      "dob": "29-06-1999"
+    },
+    {
+      "id": 2,
+      "roll": "json-server",
+      "name": "typicode",
+      "score": "typicode",
+      "dob": "13-07-2000"
+    }
+   
+  ]
