@@ -2,16 +2,44 @@
    [
     {
       "id": 1,
-      "roll": "json-server",
-      "name": "typicode",
-      "score": "typicode",
-      "dob": "29-06-1999"
+      "roll": 101,
+      "name": "Priyanka",
+      "score": 500,
+      "dob": "13-08-2000"
     },
     {
       "id": 2,
-      "roll": "json-server",
-      "name": "typicode",
-      "score": "typicode",
+      "roll": 102,
+      "name": "Priyu",
+      "score": 480,
+      "dob": "13-07-2000"
+    },
+    {
+      "id": 3,
+      "roll": 103,
+      "name": "Bhupendar",
+      "score": 380,
+      "dob": "29-06-1999"
+    },
+    {
+      "id": 4,
+      "roll": 104,
+      "name": "Harshit",
+      "score": 400,
+      "dob": "13-07-2000"
+    },
+    {
+      "id": 5,
+      "roll": 105,
+      "name": "Ankit",
+      "score": 200,
+      "dob": "13-07-2000"
+    },
+    {
+      "id": 6,
+      "roll": 106,
+      "name": "Anupama",
+      "score": 150,
       "dob": "13-07-2000"
     }
    

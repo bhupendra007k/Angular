@@ -1,0 +1,17 @@
+.btn {
+  margin-right: 30px;
+  font-weight: bold;
+}
+.text {
+  margin-left: 47%;
+  margin-top: 60px;
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+.teachLog {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
