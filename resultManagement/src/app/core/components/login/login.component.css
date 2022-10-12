@@ -1,38 +1,37 @@
+input.ng-invalid{
+    border-left: 5px solid red;
+}
+input.ng-valid{
+    border-left: 5px solid green;
+}
 .bg-image-vertical {
+  position: relative;
 
-    position: relative;
+  overflow: hidden;
 
-    overflow: hidden;
+  background-repeat: no-repeat;
 
-    background-repeat: no-repeat;
+  background-position: right center;
 
-    background-position: right center;
+  background-size: auto 100%;
+}
 
-    background-size: auto 100%;
-
-    }
-
-   
-
-    @media (min-width: 1025px) {
-
-    .h-custom-2 {
-
+@media (min-width: 1025px) {
+  .h-custom-2 {
     height: 100%;
+  }
+}
 
-    }
-
-    }
-
-
-
-.container{
-
-    /* background-image: url("../../../../assets/images/login.jpg"); */
-
-    background-size: cover;
-
-    height: 500px;
-
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0px;
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px;
+  margin-bottom: 30px;
+  background-size: cover;
 }
 

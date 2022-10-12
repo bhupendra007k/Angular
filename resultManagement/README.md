@@ -1,27 +1,23 @@
-# ResultManagement
+# Result-Management-Application
+A Result Management System using HTML, CSS, JavaScript , Node and using MVC Model.<br/>
+• Two types of users can login to application by clicking a button on homepage.<br/>
+• Students can enter their roll number and date of birth to view their result.<br/>
+• Teachers can View all records, add new record, edit and delete the records.<br/>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+# Setup Guide 
 
-## Development server
+## Database 
+1. we have used json server for storing Data.
+2. Run "npm i json-server" to install json server.
+3. Run "npx json-server --watch db.json" to run json server it will create a file named db.json.
+  
+## Backend 
+1. Open the project in Visual Studio Code.
+2. Go to toolbar --> terminal --> Open new terminal.
+3. Run "npm install" .
+4. Now to run the project --> Run "npm start app.js" on terminal.
+5. Backend will run on port "https://localhost:3000"
+  
+## Frontend
+1. Open URL "https://localhost:4200" on a browser.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

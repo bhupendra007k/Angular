@@ -1,5 +1,9 @@
 <div class="container">
-  <button routerLink="add">Add student</button>
+  <div class="mt-4 d-flex flex-row-reverse justify-content-between">
+    
+    <button routerLink="add" class="btn btn-warning">Add student</button>
+    <a class="btn btn-warning" href="login/teacherlogin" >Back</a>
+  </div>
   <table class="table mt-4">
     <thead>
       <tr>
@@ -11,7 +15,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of resultList; let i = index">
+      <tr *ngFor="let item of resultList">
         <td>{{ item.name }}</td>
         <td>{{ item.roll }}</td>
         <td>{{ item.dob }}</td>

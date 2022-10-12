@@ -1,38 +1,41 @@
-<section class="container">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-6 text-black">
-        <div
-          class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5"
-        >
-          <form style="width: 23rem">
-            <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px">
-              Log in
-            </h3>
-            <div class="form-outline mb-4">
-              <input
-                type="number"
-                id="form2Example18"
-                class="form-control form-control-lg"
-              />
-              <label class="form-label" for="form2Example18">Roll No</label>
+<div>
+    <div><a href="/login" class="btn btn-warning" style="margin-top: 5px">Back</a></div>
+
+    <form>
+        <div class="container">
+            <div class="col d-flex justify-content-center">
+                <h1>Student's Login</h1>
             </div>
-            <div class="form-outline mb-4">
-              <input
-                type="date"
-                id="form2Example28"
-                class="form-control form-control-lg"
-              />
-              <label class="form-label" for="form2Example28">DOB</label>
+
+            <div class="col d-flex justify-content-center">
+                <form [formGroup]="studentLogin" (ngSubmit)="getStudentForm()" class="sm col-md-9">
+                    <div class="form-outline mb-4">
+                        <label for="roll">Roll Number</label>
+                        <input type="number" class="form-control" placeholder="Enter Roll Number"
+                            formControlName="roll" />
+                        <ng-template [ngIf]="roll.invalid && roll.touched" >
+                            <span class="error" style="color: red;">username is required</span>
+                        </ng-template>
+
+                        <!-- <span class="error" *ngIf="username.invalid">invalid username type</span> -->
+                    </div>
+                    <!-- <br> -->
+                    <div class="form-outline mb-4">
+                        <label>DOB</label>
+                        <input type="date" class="form-control" placeholder="Enter password" formControlName="dob" />
+                        <span class="error" *ngIf="dob.invalid && dob.touched" style="color: red;">password is required</span>
+                    </div>
+                    <br />
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" [disabled]="studentLogin.invalid" class="btn btn-success">
+                            View Result
+                        </button>
+                    </div>
+
+
+                </form>
             </div>
-            <div class="pt-1 mb-4">
-              <button class="btn btn-info btn-lg btn-block" type="button">
-                Login
-              </button>
-            </div>
-          </form>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </form>
+</div>
+<router-outlet></router-outlet>

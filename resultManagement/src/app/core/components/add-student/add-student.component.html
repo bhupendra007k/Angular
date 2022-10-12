@@ -1,20 +1,28 @@
+<div class="container">
 <form [formGroup]="addStudent" (ngSubmit)="getFormData()">
+  <div class="wrapper">
   <div class="form-group">
     <label for="name">Name</label>
     <input type="text" class="form-control" placeholder="Enter Name" formControlName="name" />
+    <span class="error" *ngIf="name.invalid && name.touched" style="color: red;">password is required</span>
   </div>
   <div class="form-group">
     <label for="roll">Roll Number</label>
     <input type="number" class="form-control" placeholder="Enter Roll Number" formControlName="roll"  />
+    <span class="error" *ngIf="roll.invalid && roll.touched" style="color: red;">password is required</span>
   </div>
   <div class="form-group">
     <label for="dob">Date of Birth</label>
     <input type="date" class="form-control" placeholder="Enter Date fo Birth" formControlName="dob"/>
+    <span class="error" *ngIf="dob.invalid && dob.touched" style="color: red;">password is required</span>
   </div>
   <div class="form-group">
     <label for="score">Score</label>
     <input type="number" class="form-control" placeholder="Enter Score" formControlName="score"/>
+    <span class="error" *ngIf="score.invalid && score.touched" style="color: red;">password is required</span>
   </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" [disabled]="addStudent.invalid" class="btn btn-success">Submit</button>
+</div>
 </form>
+</div>

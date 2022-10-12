@@ -1,0 +1,33 @@
+
+    <div><a href="/login" class="btn btn-warning" style="margin-top: 5px">Back</a></div>
+
+    <div class="container">
+        <div class="col d-flex justify-content-center">
+            <h1>Teacher's Login</h1>
+        </div>
+    <div class="col d-flex justify-content-center">
+        <form [formGroup]="loginForm" (ngSubmit)="getFormData()"  class="sm col-md-9">
+            <div class="form-outline ">
+                <label for="username">UserName</label>
+                <input type="text" class="form-control" placeholder="Enter Username" formControlName="username" />
+                <ng-template [ngIf]="username.invalid && username.touched" >
+                    <span class="error" style="color: red;">username is required</span>
+                </ng-template>
+
+                <!-- <span class="error" *ngIf="username.invalid">invalid username type</span> -->
+            </div>
+            <br>
+            <div class="form-outline ">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Enter password" formControlName="password" />
+                <span class="error" *ngIf="password.invalid && password.touched" style="color: red;">password is required</span>
+            </div>
+            <br>
+            <div class="d-flex justify-content-center"><button type="submit" [disabled]="loginForm.invalid" class="btn btn-success">Login</button></div>
+
+            
+        </form>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

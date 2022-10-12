@@ -11,10 +11,13 @@ import { IndexComponent } from './core/components/index/index.component';
 import { HeaderComponent } from './core/components/header/header.component';
 import { UpdateStudentComponent} from './core/components/update-student/update-student.component'
 import { AddStudentComponent } from './core/components/add-student/add-student.component';
+import { TeacherLoginComponent } from './core/components/teacher-login/teacher-login.component';
+import { StudentRecordComponent } from './core/components/student-record/student-record.component';
+import { HomeComponent } from './core/components/home/home.component';
 import {ReactiveFormsModule} from '@angular/forms'
 
 @NgModule({
-  declarations: [AppComponent, FooterComponent, LoginComponent, IndexComponent,StudentListComponent,HeaderComponent,AddStudentComponent,UpdateStudentComponent],
+  declarations: [AppComponent, FooterComponent, LoginComponent, IndexComponent,StudentListComponent,HeaderComponent,AddStudentComponent,UpdateStudentComponent,TeacherLoginComponent,StudentRecordComponent,HomeComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgbModule,ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],

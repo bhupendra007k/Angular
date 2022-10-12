@@ -13,11 +13,8 @@ export class AppComponent implements OnInit {
 
   constructor(private data: TestserviceService, private router: Router) {}
   ngOnInit(): void {
-    
-    this.data.getData().subscribe((x: any) => {
+    this.data.getData(null).subscribe((x: any) => {
       this.abc = x;
-      console.warn(x);
     });
-
   }
 }
